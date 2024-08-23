@@ -1,0 +1,37 @@
+{% extends 'portfolio/base.html' %} {% load static %} {% block header %}
+<header>
+  <div class="px-4 py-5 my-5 text-center">
+    <img
+      class="d-block mx-auto mb-4"
+      src="{% static 'logo/logoonly_border.png' %}"
+      alt=""
+      width="20%"
+    />
+    <h1 class="display-5 fw-bold">Arveb Network</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        Welcome! You are seeing this page because this site has been
+        successfully installed and the homepage has been configured. No other
+        page is available yet since there are still no other link available, but
+        it will come in time.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+          Log In
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+          Contact
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+<main></main>
+{% block footer %}
+<div class="container mt-auto">
+  <footer class="py-3 my-4 border-top">
+    <p class="text-center text-body-secondary">&copy; 2024 Arveb Network</p>
+  </footer>
+  {% endblock %}
+</div>
